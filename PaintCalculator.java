@@ -9,7 +9,7 @@ public class PaintCalculator {
         float roomWidth = 0f;
         float roomHeight = 0f;
 
-        System.out.print("Enter room length: ");
+        System.out.print("Enter room length: "); //take input from user
         roomLength = sc.nextFloat();
         System.out.println("");
 
@@ -23,9 +23,9 @@ public class PaintCalculator {
 
         sc.close();
         
-        Room room = new Room(roomHeight, roomWidth, roomLength);
+        Room room = new Room(roomHeight, roomWidth, roomLength); //instantiate new room and pass user inputs
 
-        System.out.println("Floor area: " + room.areaFloor() + " metres squared");
+        System.out.println("Floor area: " + room.areaFloor() + " metres squared"); //display output
         System.out.printf("Paint required: %.2f litres\n", room.paintRequired());
         System.out.println("Room volume: " + room.volumeRoom() + " metres cubed");
         

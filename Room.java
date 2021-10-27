@@ -4,7 +4,7 @@ public class Room {
     float width;
     float length;
 
-    public final float paintPerSqMtr = 6.5f;
+    public final float areaPerLtr = 6.5f; //assuming 1 litre of paint covers 6.5 square metres
 
     public Room(float height, float width, float lenth)
     {
@@ -40,6 +40,6 @@ public class Room {
 
     public float paintRequired()
     {
-        return ((2 * length * height) + (2 * width * height)) / paintPerSqMtr;
+        return ((2 * length * height) + (2 * width * height)) / areaPerLtr; //first calculates the total surface area of the walls, then divides to find paint required
     }
 }
